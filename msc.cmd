@@ -7,4 +7,4 @@ REM Restore + Build
 dotnet build "%SLNDIR%\msc" --nologo || exit /b
 
 REM Run
-dotnet run -p "%SLNDIR%\msc" --no-build -- %*
+dotnet run --project "%SLNDIR%\msc" --no-build -- %*
